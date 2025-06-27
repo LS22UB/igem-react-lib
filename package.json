@@ -1,0 +1,41 @@
+{
+  "name": "@liliana-sanfilippo/igem-react-lib",
+  "version": "1.0.0",
+  "description": "reusable react component library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts",
+    "dev": "vite",
+    "lint": "eslint .",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^17.0.0",
+    "react-dom": "^18.0.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "eslint": "^8.55.0",
+    "vite": "^5.0.10",
+    "vitest": "^1.4.0"
+  },
+  "keywords": ["react", "components", "ui", "library"],
+  "author": "Liliana Sanfilippo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deinname/igem-react-lib.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
